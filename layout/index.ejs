@@ -1,1 +1,5 @@
-<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<% var prose_posts = site.categories.findOne({name: 'prose'}).posts %>
+<% prose_posts.sort('date', -1).each(function(post, i){%>
+    <%- partial('_partial/article', {post: post, index: true}) %>
+<% }) %>
+

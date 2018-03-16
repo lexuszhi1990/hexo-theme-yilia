@@ -7,8 +7,6 @@ test/unit/coverage
 test/e2e/reports
 source/assets/
 
-layout/_partial/css.ejs
-layout/_partial/script.ejs
 source/main.*
 source/mobile.*
 source/slider.*
